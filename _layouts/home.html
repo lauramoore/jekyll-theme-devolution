@@ -3,6 +3,7 @@ layout: default
 ---
 <section class="hero">
   <div>
+    {% include inline-social.html %}
     <ul class="list-inline hero-date-location">
       {% assign dates = page.dates | default: "00-99 XXX" %}
       <li><img src="/assets/img/calendar.png"/>{{ dates | escape }}</li>
